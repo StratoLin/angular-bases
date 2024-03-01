@@ -1,0 +1,18 @@
+<h1>PERSONAJES DRAGON BALL Z</h1>
+<hr>
+
+<div class="row">
+    <div class="col">
+
+
+        <app-dbz-list (onDelete)="deleteCharacterById($event)"
+        [characterList]="dbzService.characters"></app-dbz-list>
+
+        
+    </div>
+    <div class="col">
+        <app-add-character (onNewCharacter)="addCharacter($event)" ></app-add-character>
+    </div>
+</div>
+
+<!-- <app-contact></app-contact> -->
